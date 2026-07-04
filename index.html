@@ -3,518 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Yadav | AI & ML Engineer</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        bg: "hsl(0 0% 4%)",
-                        surface: "hsl(0 0% 8%)",
-                        "text-primary": "hsl(0 0% 96%)",
-                        muted: "hsl(0 0% 53%)",
-                        stroke: "hsl(0 0% 12%)",
-                    },
-                    fontFamily: {
-                        body: ['Inter', 'sans-serif'],
-                        display: ['Instrument Serif', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <style>
-        :root {
-            --bg: 0 0% 4%;
-            --surface: 0 0% 8%;
-            --text: 0 0% 96%;
-            --muted: 0 0% 53%;
-            --stroke: 0 0% 12%;
-            --accent: 0 0% 96%;
-        }
-
-        body {
-            background-color: hsl(var(--bg));
-            color: hsl(var(--text));
-            overflow-x: hidden;
-        }
-
-        .accent-gradient {
-            background: linear-gradient(90deg, #89AACC 0%, #4E85BF 100%);
-            background-size: 200% 200%;
-            animation: gradient-shift 6s ease infinite;
-        }
-
-        @keyframes scroll-down {
-            0% { transform: translateY(-100%); }
-            100% { transform: translateY(200%); }
-        }
-
-        @keyframes role-fade-in {
-            0% { opacity: 0; transform: translateY(8px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes gradient-shift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .animate-scroll-down {
-            animation: scroll-down 1.5s ease-in-out infinite;
-        }
-
-        .role-anim {
-            animation: role-fade-in 0.4s ease-out forwards;
-            display: inline-block;
-        }
-
-        /* Halftone overlay */
-        .halftone {
-            background-image: radial-gradient(circle, #000 1px, transparent 1px);
-            background-size: 4px 4px;
-        }
-        
-        /* Hide scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: hsl(var(--bg)); 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: hsl(var(--stroke)); 
-            border-radius: 4px;
-        }
-    </style>
+    <title>Vaibhav Yadav | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="font-body antialiased selection:bg-stroke selection:text-text-primary">
+<body>
 
-    <div id="loading-screen" class="fixed inset-0 z-[9999] bg-bg flex flex-col justify-between p-8 transition-opacity duration-500">
-        <div class="text-xs text-muted uppercase tracking-[0.3em] opacity-0" id="loading-label">Portfolio</div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center h-20 overflow-hidden">
-            <h2 id="loading-word" class="text-4xl md:text-6xl lg:text-7xl font-display italic text-text-primary/80 transition-all duration-300">Design</h2>
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <h1 class="logo">Vaibhav<span>.</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <div class="flex justify-end items-end w-full pb-4">
-            <div id="loading-counter" class="text-6xl md:text-8xl lg:text-9xl font-display text-text-primary tabular-nums">000</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content hidden">
+            <h3>Hello, I'm</h3>
+            <h2>Vaibhav Yadav</h2>
+            <h4 class="typing-text">Strategic Data Science & AI/ML Professional</h4>
+            <p>Leveraging Python, SQL, and predictive analytics to build ROI-centric dashboards and drive data-driven decision-making.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/vaibhav8831" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:vyvaibhav8831@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-        <div class="absolute bottom-0 left-0 w-full h-[3px] bg-stroke/50">
-            <div id="loading-progress" class="h-full w-full origin-left scale-x-0 accent-gradient" style="box-shadow: 0 0 8px rgba(137, 170, 204, 0.35);"></div>
-        </div>
-    </div>
+    </section>
 
-    <main id="main-content" class="opacity-0 hidden">
-        
-        <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 md:pt-6 px-4">
-            <div class="inline-flex items-center rounded-full backdrop-blur-md border border-white/10 bg-surface/80 px-2 py-2 transition-shadow" id="nav-pill">
-                <a href="#" class="relative w-9 h-9 rounded-full flex items-center justify-center group">
-                    <div class="absolute inset-0 rounded-full accent-gradient opacity-80 group-hover:rotate-180 transition-transform duration-500"></div>
-                    <div class="relative w-8 h-8 rounded-full bg-bg flex items-center justify-center font-display italic text-[13px] text-text-primary group-hover:scale-110 transition-transform">VY</div>
-                </a>
-                <div class="w-px h-5 bg-stroke mx-1 hidden sm:block"></div>
-                <div class="flex items-center gap-1">
-                    <a href="#" class="text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary bg-stroke/50">Home</a>
-                    <a href="#work" class="text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-muted hover:text-text-primary hover:bg-stroke/50 transition-colors">Work</a>
-                    <a href="#experience" class="text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-muted hover:text-text-primary hover:bg-stroke/50 transition-colors">Background</a>
-                    <a href="#resume" class="text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-muted hover:text-text-primary hover:bg-stroke/50 transition-colors">Resume</a>
-                </div>
-                <div class="w-px h-5 bg-stroke mx-1"></div>
-                <a href="mailto:vyvaibhav8831@gmail.com" class="relative group rounded-full text-xs sm:text-sm inline-flex">
-                    <span class="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <div class="relative px-3 sm:px-4 py-1.5 sm:py-2 bg-surface rounded-full backdrop-blur-md flex items-center gap-2 text-text-primary">
-                        Say hi <span class="text-[10px]">↗</span>
-                    </div>
-                </a>
-            </div>
-        </nav>
-
-        <section class="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0 pointer-events-none">
-                <video id="hero-video" autoPlay muted loop playsInline class="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 opacity-60"></video>
-                <div class="absolute inset-0 bg-black/30"></div>
-                <div class="absolute bottom-0 w-full h-48 bg-gradient-to-t from-bg to-transparent"></div>
-            </div>
-
-            <div class="relative z-10 text-center px-4 flex flex-col items-center">
-                <div class="blur-in text-xs text-muted uppercase tracking-[0.3em] mb-8">COLLECTION '26</div>
-                <h1 class="name-reveal text-6xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-text-primary mb-6">Vaibhav Yadav [cite: 1]</h1>
-                <div class="blur-in text-lg md:text-2xl text-text-primary/90 mb-6 font-light h-8">
-                    A <span id="role-text" class="font-display italic text-text-primary text-xl md:text-3xl">Strategic Professional</span> mapping business data.
-                </div>
-                <p class="blur-in text-sm md:text-base text-muted max-w-lg mb-12 leading-relaxed">
-                    Strategic Data Science and Analytics professional with hands-on expertise in Artificial Intelligence (AI), Machine Learning (ML), and statistical data visualization. [cite: 5]
-                </p>
-                <div class="blur-in flex items-center gap-4">
-                    <a href="#work" class="group relative rounded-full overflow-hidden inline-block hover:scale-105 transition-transform duration-300">
-                        <span class="absolute inset-[-2px] accent-gradient opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        <div class="relative bg-text-primary text-bg group-hover:bg-bg group-hover:text-text-primary text-sm px-7 py-3.5 rounded-full font-medium transition-colors">See Works</div>
-                    </a>
-                    <a href="https://github.com/vaibhav8831" target="_blank" class="group relative rounded-full overflow-hidden inline-block hover:scale-105 transition-transform duration-300">
-                        <span class="absolute inset-[-2px] accent-gradient opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        <div class="relative border-2 border-stroke bg-bg text-text-primary group-hover:border-transparent text-sm px-7 py-3.5 rounded-full font-medium transition-colors">GitHub ↗</div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
-                <span class="text-[10px] text-muted uppercase tracking-[0.2em]">Scroll</span>
-                <div class="w-px h-10 bg-stroke relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-full bg-text-primary animate-scroll-down"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="bg-bg py-20 md:py-32">
-            <div class="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 js-fade-up opacity-0">
-                    <div>
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-8 h-px bg-stroke"></div>
-                            <span class="text-xs text-muted uppercase tracking-[0.3em]">Selected Work</span>
-                        </div>
-                        <h2 class="text-4xl md:text-5xl lg:text-6xl text-text-primary tracking-tight">Featured <span class="font-display italic">projects</span></h2>
-                        <p class="text-muted mt-4 max-w-sm">A selection of technical projects covering schema design, AI agents, and data workflow automation.</p>
-                    </div>
-                    <a href="https://github.com/vaibhav8831" target="_blank" class="hidden md:inline-flex group relative rounded-full">
-                        <span class="absolute inset-[-2px] accent-gradient rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        <div class="relative bg-bg border border-stroke text-text-primary px-6 py-3 rounded-full text-sm flex items-center gap-2">
-                            View all work <span>→</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 js-fade-up opacity-0">
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container hidden">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Strategic Data Science and Analytics professional with hands-on expertise in Artificial Intelligence (AI), Machine Learning (ML), and statistical data visualization. Adept at employing Agile methodologies and core business analysis frameworks (BRD, FRD, RCA, SWOT) to translate complex datasets into actionable business insights and optimize cross-functional operational performance.</p>
                     
-                    <div class="md:col-span-7 group relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-surface border border-stroke flex items-end p-6 cursor-pointer">
-                        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black group-hover:scale-105 transition-transform duration-700"></div>
-                        <div class="absolute inset-0 halftone opacity-20 mix-blend-multiply"></div>
-                        <div class="absolute inset-0 bg-bg/70 opacity-0 group-hover:opacity-100 backdrop-blur-lg transition-all duration-500"></div>
-                        
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                            <div class="relative p-[2px] rounded-full overflow-hidden">
-                                <div class="absolute inset-0 accent-gradient"></div>
-                                <div class="relative bg-white text-black px-6 py-2 rounded-full text-sm flex items-center gap-2">
-                                    View — <span class="font-display italic text-lg">AeroX RDBMS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative z-10 w-full group-hover:opacity-0 transition-opacity duration-300">
-                            <h3 class="text-2xl font-display italic text-text-primary mb-2">AeroX Aviation RDBMS Design [cite: 25]</h3>
-                            <p class="text-muted text-sm max-w-md">Designed RDBMS schema with 5+ core entities utilizing advanced SQL indexing. [cite: 27] Cut query retrieval time by 35% for 100K+ records, optimizing flight occupancy by 15%. [cite: 28]</p>
-                        </div>
-                    </div>
-
-                    <div class="md:col-span-5 group relative aspect-square md:aspect-[3/4] rounded-3xl overflow-hidden bg-surface border border-stroke flex items-end p-6 cursor-pointer">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-surface group-hover:scale-105 transition-transform duration-700"></div>
-                        <div class="absolute inset-0 bg-bg/70 opacity-0 group-hover:opacity-100 backdrop-blur-lg transition-all duration-500"></div>
-                        
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                            <div class="relative p-[2px] rounded-full overflow-hidden">
-                                <div class="absolute inset-0 accent-gradient"></div>
-                                <div class="relative bg-white text-black px-6 py-2 rounded-full text-sm flex items-center gap-2">
-                                    View — <span class="font-display italic text-lg">AI Agents</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative z-10 w-full group-hover:opacity-0 transition-opacity duration-300">
-                            <h3 class="text-2xl font-display italic text-text-primary mb-2">AI Agent Challenge Hackathon - Rilo [cite: 30]</h3>
-                            <p class="text-muted text-sm">Demonstrated practical skills in AI development, rapid prototyping, and problem-solving by building and deploying AI agents in a competitive hackathon environment. [cite: 31]</p>
-                        </div>
-                    </div>
-
-                    <div class="md:col-span-5 group relative aspect-square md:aspect-[3/4] rounded-3xl overflow-hidden bg-surface border border-stroke flex items-end p-6 cursor-pointer">
-                        <div class="absolute inset-0 bg-gradient-to-bl from-purple-900/20 to-surface group-hover:scale-105 transition-transform duration-700"></div>
-                        <div class="absolute inset-0 bg-bg/70 opacity-0 group-hover:opacity-100 backdrop-blur-lg transition-all duration-500"></div>
-                        
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                            <div class="relative p-[2px] rounded-full overflow-hidden">
-                                <div class="absolute inset-0 accent-gradient"></div>
-                                <div class="relative bg-white text-black px-6 py-2 rounded-full text-sm flex items-center gap-2">
-                                    View — <span class="font-display italic text-lg">Automation</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative z-10 w-full group-hover:opacity-0 transition-opacity duration-300">
-                            <h3 class="text-2xl font-display italic text-text-primary mb-2">n8n Automation Workflows</h3>
-                            <p class="text-muted text-sm">Proficient in leveraging Python, SQL, and predictive analytics to build ROI-centric dashboards, streamline ETL pipelines, and automate reporting workflows. [cite: 6]</p>
-                        </div>
-                    </div>
-
-                    <div class="md:col-span-7 group relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-surface border border-stroke flex items-end p-6 cursor-pointer">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent group-hover:scale-105 transition-transform duration-700"></div>
-                        <div class="absolute inset-0 halftone opacity-20 mix-blend-multiply"></div>
-                        <div class="absolute inset-0 bg-bg/70 opacity-0 group-hover:opacity-100 backdrop-blur-lg transition-all duration-500"></div>
-                        
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                            <div class="relative p-[2px] rounded-full overflow-hidden">
-                                <div class="absolute inset-0 accent-gradient"></div>
-                                <div class="relative bg-white text-black px-6 py-2 rounded-full text-sm flex items-center gap-2">
-                                    View — <span class="font-display italic text-lg">Dashboards</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative z-10 w-full group-hover:opacity-0 transition-opacity duration-300">
-                            <h3 class="text-2xl font-display italic text-text-primary mb-2">Advanced EDA & Data Management</h3>
-                            <p class="text-muted text-sm max-w-md">Data Analysis utilizing Advanced Excel (PivotTables, Data Validation, VLOOKUP, Power Query), Data Wrangling, and EDA for automated formatting of structured dashboards. [cite: 18, 19]</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="bg-surface py-20 md:py-32 border-t border-stroke">
-            <div class="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
-                <div class="flex items-center gap-4 mb-16 js-fade-up opacity-0">
-                    <div class="w-8 h-px bg-stroke"></div>
-                    <span class="text-xs text-muted uppercase tracking-[0.3em]">Background</span>
-                </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 js-fade-up opacity-0">
-                    
-                    <div>
-                        <h3 class="text-4xl font-display italic text-text-primary mb-10">Experience</h3>
-                        <div class="relative pl-8 border-l border-stroke flex flex-col gap-12">
-                            <div class="relative">
-                                <div class="absolute w-4 h-4 bg-bg border-[3px] border-text-primary rounded-full -left-[2.2rem] top-1"></div>
-                                <div class="text-xs text-accent uppercase tracking-wider mb-2 font-semibold">01/07/2026 – Present [cite: 13]</div>
-                                <h4 class="text-xl text-text-primary font-medium mb-1">Data Analytics Intern [cite: 11]</h4>
-                                <div class="text-sm text-muted mb-4 font-display italic text-lg">QuadSync Tech Solutions [cite: 11]</div>
-                                <ul class="text-sm text-muted leading-relaxed list-disc pl-4 space-y-2">
-                                    <li>Assisted in cleaning, organizing, and preparing raw datasets for analysis, improving overall data accuracy. [cite: 14]</li>
-                                    <li>Collaborated with the team to design basic reporting dashboards for tracking key performance metrics. [cite: 15]</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-4xl font-display italic text-text-primary mb-10">Education</h3>
-                        <div class="relative pl-8 border-l border-stroke flex flex-col gap-12">
-                            <div class="relative">
-                                <div class="absolute w-4 h-4 bg-bg border-[3px] border-stroke rounded-full -left-[2.2rem] top-1"></div>
-                                <div class="text-xs text-muted uppercase tracking-wider mb-2">Graduated July 2024 [cite: 9]</div>
-                                <h4 class="text-xl text-text-primary font-medium mb-1">Bachelor of Management Studies (BMS) [cite: 9]</h4>
-                                <div class="text-sm text-muted mb-4 font-display italic text-lg">KM Agrawal College (Mumbai University) [cite: 9]</div>
-                                <p class="text-sm text-muted leading-relaxed">
-                                    Graduated with a CGPA of 7.5. [cite: 12] Adept at employing Agile methodologies and core business analysis frameworks (BRD, FRD, RCA, SWOT) to translate complex datasets into actionable business insights. [cite: 7]
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-bg py-16 md:py-24 border-t border-stroke" id="resume">
-            <div class="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-12 text-center js-fade-up opacity-0">
-                <div>
-                    <div class="text-5xl md:text-6xl font-display italic text-text-primary mb-2">7.5 [cite: 12]</div>
-                    <div class="text-sm text-muted uppercase tracking-widest">CGPA / BMS Degree</div>
-                    <div class="text-xs text-stroke mt-2">Mumbai University (July 2024) [cite: 9]</div>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-display italic text-text-primary mb-2">10+</div>
-                    <div class="text-sm text-muted uppercase tracking-widest">Tools & Languages</div>
-                    <div class="text-xs text-stroke mt-2">Python, SQL, n8n, Git [cite: 17, 20, 21]</div>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-display italic text-text-primary mb-2">3+</div>
-                    <div class="text-sm text-muted uppercase tracking-widest">Core Domains</div>
-                    <div class="text-xs text-stroke mt-2">Linear Algebra, Prob & Stats [cite: 22]</div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="relative bg-bg pt-16 md:pt-20 pb-8 md:pb-12 overflow-hidden border-t border-stroke">
-            <div class="relative z-10 flex flex-col items-center">
-                
-                <div class="w-full overflow-hidden mb-16 relative">
-                    <div class="flex whitespace-nowrap text-5xl md:text-8xl font-display italic text-stroke select-none" id="marquee">
-                        BUILDING THE FUTURE • AUTOMATING WORKFLOWS • ANALYZING DATA • BUILDING THE FUTURE • AUTOMATING WORKFLOWS • ANALYZING DATA • 
-                    </div>
-                </div>
-
-                <a href="mailto:vyvaibhav8831@gmail.com" class="relative group rounded-full mb-20 inline-block">
-                    <span class="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    <div class="relative px-8 py-4 bg-surface rounded-full flex items-center gap-2 text-text-primary text-lg">
-                        vyvaibhav8831@gmail.com [cite: 2] <span class="text-sm">↗</span>
-                    </div>
-                </a>
-
-                <div class="w-full max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted">
-                    <div class="flex gap-6">
-                        <a href="https://www.linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank" class="hover:text-text-primary transition-colors">LinkedIn</a>
-                        <a href="https://github.com/vaibhav8831" target="_blank" class="hover:text-text-primary transition-colors">GitHub</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                        Available for projects
+                    <div class="education-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <h4>Bachelor of Management Studies (BMS)</h4>
+                        <p>KM Agrawal College (Mumbai University) | Graduated July 2024</p>
+                        <span class="badge">CGPA: 7.5</span>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container hidden">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Git/GitHub</span>
+                        <span>n8n Automation</span>
+                        <span>VS Code</span>
+                        <span>Jupyter Notebook</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-pie"></i> Data & Analytics</h3>
+                    <div class="skill-tags">
+                        <span>Advanced Excel</span>
+                        <span>Power Query</span>
+                        <span>Data Wrangling</span>
+                        <span>EDA</span>
+                        <span>Structured Dashboards</span>
+                        <span>Model Evaluation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Core Concepts</h3>
+                    <div class="skill-tags">
+                        <span>Artificial Intelligence</span>
+                        <span>Machine Learning</span>
+                        <span>Probability & Statistics</span>
+                        <span>Linear Algebra</span>
+                        <span>Agile Methodologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container hidden">
+            <h2 class="section-title">Experience & Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Started 01/07/2026</div>
+                    <div class="timeline-content">
+                        <h3>Data Analytics Intern</h3>
+                        <h4>QuadSync Tech Solutions</h4>
+                        <ul>
+                            <li>Assisted in cleaning, organizing, and preparing raw datasets for analysis, improving overall data accuracy.</li>
+                            <li>Collaborated with the team to design basic reporting dashboards for tracking key performance metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Achievement</div>
+                    <div class="timeline-content">
+                        <h3>AI Agent Challenge Hackathon - Rilo</h3>
+                        <h4>Participant</h4>
+                        <p>Demonstrated practical skills in AI development, rapid prototyping, and problem-solving by building and deploying AI agents in a competitive hackathon environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // 1. Loading Screen Logic
-        let count = 0;
-        const counterEl = document.getElementById('loading-counter');
-        const progressEl = document.getElementById('loading-progress');
-        const wordEl = document.getElementById('loading-word');
-        const labelEl = document.getElementById('loading-label');
-        const loadingScreen = document.getElementById('loading-screen');
-        const mainContent = document.getElementById('main-content');
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding bg-light">
+        <div class="container hidden">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Data Management</span>
+                            <span>Schema Design</span>
+                        </div>
+                        <h3>AeroX Aviation RDBMS Design</h3>
+                        <p><strong>Objective:</strong> Centralize high-volume data for flight scheduling, revenue, and maintenance.</p>
+                        <p><strong>Action:</strong> Designed RDBMS schema with 5+ core entities utilizing advanced SQL indexing.</p>
+                        <p><strong>Result:</strong> Cut query retrieval time by 35% for 100K+ records, optimizing flight occupancy by 15%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        const words = ["Design", "Create", "Automate", "Inspire"];
-        let wordIdx = 0;
-        
-        // Cycle words
-        const wordInterval = setInterval(() => {
-            wordIdx = (wordIdx + 1) % words.length;
-            wordEl.style.opacity = 0;
-            wordEl.style.transform = "translateY(-20px)";
-            
-            setTimeout(() => {
-                wordEl.innerText = words[wordIdx];
-                wordEl.style.transform = "translateY(20px)";
-                
-                requestAnimationFrame(() => {
-                    wordEl.style.opacity = 1;
-                    wordEl.style.transform = "translateY(0)";
-                });
-            }, 300);
-        }, 900);
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container hidden">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'm currently open to new opportunities in Data Science, Analytics, and AI/ML.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:vyvaibhav8831@gmail.com">vyvaibhav8831@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:+917738916355">+91-7738916355</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <a href="https://linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Animate label
-        gsap.to(labelEl, { y: 0, opacity: 1, duration: 1, delay: 0.5 });
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vaibhav Yadav. All rights reserved.</p>
+        </div>
+    </footer>
 
-        // Counter logic
-        const duration = 2700; 
-        const startTime = performance.now();
-
-        function updateLoader(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            
-            count = Math.floor(progress * 100);
-            counterEl.innerText = String(count).padStart(3, '0');
-            progressEl.style.transform = `scaleX(${progress})`;
-
-            if (progress < 1) {
-                requestAnimationFrame(updateLoader);
-            } else {
-                clearInterval(wordInterval);
-                setTimeout(completeLoading, 400);
-            }
-        }
-        requestAnimationFrame(updateLoader);
-
-        function completeLoading() {
-            loadingScreen.style.opacity = 0;
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-                mainContent.classList.remove('hidden');
-                mainContent.classList.remove('opacity-0');
-                
-                // Trigger Hero GSAP
-                initHeroAnimations();
-            }, 500);
-        }
-
-        // 2. Hero Animations
-        function initHeroAnimations() {
-            const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-            
-            tl.fromTo(".name-reveal", 
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1.2 }
-            )
-            .fromTo(".blur-in",
-                { opacity: 0, filter: "blur(10px)", y: 20 },
-                { opacity: 1, filter: "blur(0px)", y: 0, duration: 1, stagger: 0.1 },
-                "-=0.9"
-            );
-
-            // Cycle Roles
-            const roles = ["AI Engineer", "Data Scientist", "ML Expert", "Data Analyst"];
-            const roleEl = document.getElementById('role-text');
-            let roleIdx = 0;
-            
-            setInterval(() => {
-                roleIdx = (roleIdx + 1) % roles.length;
-                roleEl.classList.remove('role-anim');
-                void roleEl.offsetWidth; // trigger reflow
-                roleEl.innerText = roles[roleIdx];
-                roleEl.classList.add('role-anim');
-            }, 2500);
-        }
-
-        // 3. Scroll Trigger Animations
-        gsap.utils.toArray('.js-fade-up').forEach(element => {
-            gsap.fromTo(element, 
-                { opacity: 0, y: 30 },
-                {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: "top 85%",
-                    },
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    ease: "power2.out"
-                }
-            );
-        });
-
-        // Marquee Animation
-        gsap.to("#marquee", {
-            xPercent: -50,
-            duration: 20,
-            ease: "none",
-            repeat: -1
-        });
-
-        // Navbar Shadow on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('nav-pill');
-            if (window.scrollY > 100) {
-                nav.classList.add('shadow-md', 'shadow-black/50');
-            } else {
-                nav.classList.remove('shadow-md', 'shadow-black/50');
-            }
-        });
-
-        // 4. HLS Video Setup
-        const video = document.getElementById('hero-video');
-        const videoSrc = 'https://stream.mux.com/Aa02T7oM1wH5Mk5EEVDYhbZ1ChcdhRsS2m1NYyx4Ua1g.m3u8';
-        
-        if (Hls.isSupported()) {
-            const hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = videoSrc;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

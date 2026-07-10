@@ -1,198 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Yadav | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vaibhav Yadav — Data Science & Analytics professional. Python, SQL, machine learning, dashboards and data-driven decision making." />
+  <title>Vaibhav Yadav — Data Science &amp; Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="nav-brand">
+        <span class="brand-mark">VY</span>
+        <span class="brand-text">Vaibhav Yadav</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Navigation -->
-    <header id="header">
-        <div class="container nav-container">
-            <h1 class="logo">Vaibhav<span>.</span></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow reveal">
+          <span class="mono">&gt;_</span> data science &amp; analytics
+        </p>
+        <h1 class="hero-title reveal">
+          Vaibhav<br />Yadav
+        </h1>
+        <p class="hero-subtitle mono reveal">
+          Turning complex datasets into<br />
+          actionable business insights.
+        </p>
+        <p class="hero-tagline mono reveal">
+          <span class="accent">&gt; _</span> python · sql · machine learning
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content hidden">
-            <h3>Hello, I'm</h3>
-            <h2>Vaibhav Yadav</h2>
-            <h4 class="typing-text">Strategic Data Science & AI/ML Professional</h4>
-            <p>Leveraging Python, SQL, and predictive analytics to build ROI-centric dashboards and drive data-driven decision-making.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/vaibhav8831" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:vyvaibhav8831@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+        <ul class="hero-pillars reveal" aria-label="Core strengths">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19V10M10 19V5M16 19v-8M22 19H2"/></svg>
+            <span>ANALYZE</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2zM12 11v9M4 6.5l8 4.5 8-4.5"/></svg>
+            <span>MODEL</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2L4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            <span>AUTOMATE</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <span>DELIVER</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container hidden">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Strategic Data Science and Analytics professional with hands-on expertise in Artificial Intelligence (AI), Machine Learning (ML), and statistical data visualization. Adept at employing Agile methodologies and core business analysis frameworks (BRD, FRD, RCA, SWOT) to translate complex datasets into actionable business insights and optimize cross-functional operational performance.</p>
-                    
-                    <div class="education-card">
-                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                        <h4>Bachelor of Management Studies (BMS)</h4>
-                        <p>KM Agrawal College (Mumbai University) | Graduated July 2024</p>
-                        <span class="badge">CGPA: 7.5</span>
-                    </div>
-                </div>
-            </div>
+    <!-- ===== About ===== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label mono reveal">01 / About</div>
+        <div class="about-grid">
+          <h2 id="about-heading" class="section-title reveal text-balance">
+            Strategic data professional focused on ROI-centric analytics.
+          </h2>
+          <div class="about-copy reveal">
+            <p>
+              I&apos;m a Data Science and Analytics professional with hands-on expertise in
+              Artificial Intelligence, Machine Learning, and statistical data visualization.
+              I use Python, SQL, and predictive analytics to build ROI-centric dashboards,
+              streamline ETL pipelines, and automate reporting workflows.
+            </p>
+            <p>
+              I employ Agile methodologies and core business analysis frameworks —
+              BRD, FRD, RCA, and SWOT — to translate complex datasets into actionable
+              business insights, drive data-driven decision-making, and optimize
+              cross-functional operational performance.
+            </p>
+            <dl class="about-stats">
+              <div class="stat">
+                <dt class="mono">Query speed gain</dt>
+                <dd>35%</dd>
+              </div>
+              <div class="stat">
+                <dt class="mono">Records handled</dt>
+                <dd>100K+</dd>
+              </div>
+              <div class="stat">
+                <dt class="mono">Occupancy uplift</dt>
+                <dd>15%</dd>
+              </div>
+            </dl>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section-padding bg-light">
-        <div class="container hidden">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages & Tools</h3>
-                    <div class="skill-tags">
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>Git/GitHub</span>
-                        <span>n8n Automation</span>
-                        <span>VS Code</span>
-                        <span>Jupyter Notebook</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-pie"></i> Data & Analytics</h3>
-                    <div class="skill-tags">
-                        <span>Advanced Excel</span>
-                        <span>Power Query</span>
-                        <span>Data Wrangling</span>
-                        <span>EDA</span>
-                        <span>Structured Dashboards</span>
-                        <span>Model Evaluation</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Core Concepts</h3>
-                    <div class="skill-tags">
-                        <span>Artificial Intelligence</span>
-                        <span>Machine Learning</span>
-                        <span>Probability & Statistics</span>
-                        <span>Linear Algebra</span>
-                        <span>Agile Methodologies</span>
-                    </div>
-                </div>
-            </div>
+    <!-- ===== Skills ===== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label mono reveal">02 / Skills</div>
+        <h2 id="skills-heading" class="section-title reveal">Technical toolkit</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3 class="mono">Programming</h3>
+            <ul class="tag-list">
+              <li>Python</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="mono">Data Analysis</h3>
+            <ul class="tag-list">
+              <li>Advanced Excel</li><li>PivotTables</li><li>Power Query</li><li>VLOOKUP</li><li>Data Wrangling</li><li>EDA</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="mono">Visualization</h3>
+            <ul class="tag-list">
+              <li>Structured Dashboards</li><li>Automated Formatting</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="mono">Tools &amp; Version Control</h3>
+            <ul class="tag-list">
+              <li>Git</li><li>GitHub</li><li>n8n Automation</li><li>VS Code</li><li>Jupyter Notebook</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="mono">Core Concepts</h3>
+            <ul class="tag-list">
+              <li>Probability</li><li>Statistics</li><li>Linear Algebra</li><li>Model Evaluation</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 class="mono">Languages</h3>
+            <ul class="tag-list">
+              <li>English</li><li>Hindi</li><li>Marathi</li>
+            </ul>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section-padding">
-        <div class="container hidden">
-            <h2 class="section-title">Experience & Achievements</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Started 01/07/2026</div>
-                    <div class="timeline-content">
-                        <h3>Data Analytics Intern</h3>
-                        <h4>QuadSync Tech Solutions</h4>
-                        <ul>
-                            <li>Assisted in cleaning, organizing, and preparing raw datasets for analysis, improving overall data accuracy.</li>
-                            <li>Collaborated with the team to design basic reporting dashboards for tracking key performance metrics.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Achievement</div>
-                    <div class="timeline-content">
-                        <h3>AI Agent Challenge Hackathon - Rilo</h3>
-                        <h4>Participant</h4>
-                        <p>Demonstrated practical skills in AI development, rapid prototyping, and problem-solving by building and deploying AI agents in a competitive hackathon environment.</p>
-                    </div>
-                </div>
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label mono reveal">03 / Projects</div>
+        <h2 id="projects-heading" class="section-title reveal">Selected work</h2>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>AeroX Aviation RDBMS Design</h3>
+            <ul class="tag-list" aria-label="Technologies used">
+              <li>SQL</li><li>Data Management</li><li>Schema Design</li>
+            </ul>
+          </div>
+          <div class="project-body">
+            <div class="project-row">
+              <span class="mono project-key">Objective</span>
+              <p>A centralized, scalable relational database system to manage high-volume daily operations — flight scheduling, dynamic revenue tracking, and rigorous aircraft maintenance logs.</p>
             </div>
-        </div>
+            <div class="project-row">
+              <span class="mono project-key">Method</span>
+              <p>Engineered a comprehensive RDBMS with normalized tables for routes, bookings, and passengers. Implemented robust primary and foreign key constraints to ensure data integrity across complex transactions.</p>
+            </div>
+            <div class="project-row">
+              <span class="mono project-key">Outcome</span>
+              <p>Reduced query retrieval time by <strong>35%</strong> across <strong>100,000+</strong> records, enabling data-driven reporting that optimized flight occupancy rates by an estimated <strong>15%</strong>.</p>
+            </div>
+          </div>
+          <div class="project-metrics mono" aria-label="Project metrics">
+            <div><span class="metric-label">Query time:</span><span class="metric-value accent">-35%</span></div>
+            <div><span class="metric-label">Dataset:</span><span class="metric-value">100K+ records</span></div>
+            <div><span class="metric-label">Occupancy:</span><span class="metric-value accent">+15%</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vaibhav8831" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm mono">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn-icon"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>Retail Sales Intelligence &amp; Demand Forecasting</h3>
+            <ul class="tag-list" aria-label="Technologies used">
+              <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>ETL</li><li>Machine Learning</li>
+            </ul>
+          </div>
+          <div class="project-body">
+            <div class="project-row">
+              <span class="mono project-key">Objective</span>
+              <p>An industry-level, end-to-end analytics solution for retail businesses — automating raw sales data ingestion, cleaning, and demand forecasting to reduce stockouts and overstocking across multiple store locations.</p>
+            </div>
+            <div class="project-row">
+              <span class="mono project-key">Method</span>
+              <p>Built a modular Python ETL pipeline with Pandas for data wrangling and EDA, engineered time-based features, and trained regression-based forecasting models with Scikit-learn. Automated weekly report generation and structured dashboards for stakeholder-ready insights.</p>
+            </div>
+            <div class="project-row">
+              <span class="mono project-key">Outcome</span>
+              <p>Delivered a reusable forecasting workflow with <strong>90%+</strong> data accuracy after cleaning, cutting manual reporting effort by <strong>~70%</strong> and enabling proactive, data-driven inventory decisions.</p>
+            </div>
+          </div>
+          <div class="project-metrics mono" aria-label="Project metrics">
+            <div><span class="metric-label">Data accuracy:</span><span class="metric-value accent">90%+</span></div>
+            <div><span class="metric-label">Manual effort:</span><span class="metric-value accent">-70%</span></div>
+            <div><span class="metric-label">Pipeline:</span><span class="metric-value">End-to-end ETL</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vaibhav8831" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm mono">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn-icon"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section-padding bg-light">
-        <div class="container hidden">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>SQL</span>
-                            <span>Data Management</span>
-                            <span>Schema Design</span>
-                        </div>
-                        <h3>AeroX Aviation RDBMS Design</h3>
-                        <p><strong>Objective:</strong> Centralize high-volume data for flight scheduling, revenue, and maintenance.</p>
-                        <p><strong>Action:</strong> Designed RDBMS schema with 5+ core entities utilizing advanced SQL indexing.</p>
-                        <p><strong>Result:</strong> Cut query retrieval time by 35% for 100K+ records, optimizing flight occupancy by 15%.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ===== Experience & Education ===== -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-label mono reveal">04 / Experience &amp; Education</div>
+        <h2 id="experience-heading" class="section-title reveal">Journey so far</h2>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date mono">2026</span>
+            <h3>Data Analytics Intern — QuadSync Tech Solutions</h3>
+            <p>Cleaned, organized, and prepared raw datasets for analysis, improving overall data accuracy. Collaborated on reporting dashboards for tracking key performance metrics.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date mono">Jan 2026</span>
+            <h3>AI Agent Challenge Hackathon — Rilo</h3>
+            <p>Demonstrated practical skills in AI development, rapid prototyping, and problem-solving by building and deploying AI agents in a competitive environment.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date mono">2024</span>
+            <h3>Bachelor of Management Studies (BMS)</h3>
+            <p>KM Agrawal College, Mumbai University — CGPA 7.5. Graduated July 2024.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date mono">HSC</span>
+            <h3>12th Pass (HSC) — Commerce</h3>
+            <p>PBM Junior College — 75% marks.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section-padding">
-        <div class="container hidden">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'm currently open to new opportunities in Data Science, Analytics, and AI/ML.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <h4>Email</h4>
-                    <a href="mailto:vyvaibhav8831@gmail.com">vyvaibhav8831@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <h4>Phone</h4>
-                    <a href="tel:+917738916355">+91-7738916355</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <h4>LinkedIn</h4>
-                    <a href="https://linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank">View Profile</a>
-                </div>
-            </div>
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label mono reveal">05 / Contact</div>
+        <h2 id="contact-heading" class="section-title reveal text-balance">
+          Open to data analytics opportunities. Let&apos;s talk.
+        </h2>
+        <div class="contact-grid">
+          <a href="mailto:vyvaibhav8831@gmail.com" class="contact-card reveal">
+            <span class="mono contact-label">Email</span>
+            <span class="contact-value">vyvaibhav8831@gmail.com</span>
+          </a>
+          <a href="tel:+917738916355" class="contact-card reveal">
+            <span class="mono contact-label">Phone</span>
+            <span class="contact-value">+91 77389 16355</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vaibhav-yadav-4705b4215" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <span class="mono contact-label">LinkedIn</span>
+            <span class="contact-value">vaibhav-yadav-4705b4215</span>
+          </a>
+          <a href="https://github.com/vaibhav8831" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <span class="mono contact-label">GitHub</span>
+            <span class="contact-value">vaibhav8831</span>
+          </a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Vaibhav Yadav. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="mono">&copy; <span id="year"></span> Vaibhav Yadav</p>
+      <a href="#top" class="mono back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
